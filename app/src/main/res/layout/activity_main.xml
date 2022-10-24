@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="395dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ojone"
+        android:background="@color/gray"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        android:padding="28sp"
+        android:background="@color/purple_200"
+        app:cardCornerRadius="15sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
+                android:text="Name"
+                android:textSize="10sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blessing Ojone Yakubu"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        android:padding="28sp"
+        android:background="@color/purple_200"
+        app:cardCornerRadius="15sp">
+
+        <LinearLayout
+            android:layout_width="482dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
+                android:text="Email"
+                android:textSize="10sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="blessing.yakubu@womentechsters.org"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        android:padding="28sp"
+        android:background="@color/purple_200"
+        app:cardCornerRadius="15sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/spin"
+                android:layout_width="28sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp">
+
+            </Spinner>
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="48sp"
+                android:layout_height="wrap_content"
+                android:hint=" +234  |"
+                android:layout_marginLeft="0sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="8147263841"
+                android:textSize="15dp"
+                android:layout_margin="10sp"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card3"
+        android:padding="28sp"
+        android:background="@color/purple_200"
+        app:cardCornerRadius="15sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5sp"
+                android:text="Bio"
+                android:textSize="10sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blessing Ojone Yakubu is a petroleum engineering student at the university of benin and aslo a mobile app deveoper. She is also a fellow of the WTF Class23. Blessing love food, dancing and songs. She is also a memeber of SPE, APWEN,NUSEA."
+                android:textSize="15dp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="100"
+                app:counterEnabled="true"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:maxLength="100"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18sp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/card4"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
